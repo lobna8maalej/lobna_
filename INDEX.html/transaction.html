@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Étude de la Traçabilité des Transactions Bancaires et Factures</title>
+<link rel="stylesheet" href="transaction.css">
+</head>
+<body>
+
+<h1>Analyse du Numéro de Compte Bancaire et du Numéro de Facture</h1>
+
+<p>
+Dans ce projet, nous analysons deux éléments essentiels à la gestion des transactions financières et commerciales : le <strong>numéro de compte bancaire global</strong> et le <strong>numéro de facture</strong>.
+</p>
+
+<div class="dashboard-container">
+    <iframe 
+        src="https://app.powerbi.com/view?r=eyJrIjoiNDQ0MDRiMjMtZjYwOC00ZWIzLWE3YTEtODI1NDRhYjJlMDY1IiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9" 
+        frameborder="0" 
+        allowFullScreen="true">
+    </iframe>
+</div>
+
+<h2>Points clés du projet :</h2>
+
+<!-- Liste des points -->
+<ul id="pointsList"></ul>
+
+<!-- Ajouter un nouveau point -->
+<input type="text" id="newPoint" placeholder="Ajouter un point...">
+<button id="addPoint">Ajouter</button>
+
+<!-- Rechercher / filtrer -->
+<input type="text" id="searchInput" placeholder="Rechercher un mot...">
+
+<div id="searchtransaction" style="margin-top:10px; color:rgb(255, 0, 25);"></div>
+
+<a href="powerbi.html">Retour à la liste des projets</a>
+
+<script src="transaction.js"></script>
+</body>
+</html>

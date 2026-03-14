@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyse Comparative des Modèles Bancaires : BNA et Zitouna Bank</title>
+    <link rel="stylesheet" href="banque.css">
+</head>
+<body>
+   
+<h1>Analyse des Stratégies et Services Bancaires : BNA vs Zitouna Bank</h1> 
+
+<p>
+    Ce projet se concentre sur l’analyse comparative de deux institutions financières majeures en Tunisie : la Banque Nationale Agricole (BNA) et Zitouna Bank. L’objectif est de comprendre comment leurs modèles bancaires respectifs répondent aux besoins de la société tunisienne et influencent l’économie locale.  
+</p>
+<p>
+    La BNA, fondée en 1959, joue un rôle clé dans le financement de l’agriculture et du développement rural, avec une forte implication de l’État tunisien. Elle suit un modèle traditionnel, axé sur la stabilité, le soutien aux projets agricoles et le respect strict des régulations financières. Zitouna Bank, créée en 2009, se distingue par son approche éthique et l’intégration des principes de la finance islamique dans ses opérations, offrant des produits conformes à la loi islamique tout en répondant aux besoins des clients modernes.  
+</p>
+<p>
+    L’étude met en lumière les différences essentielles entre ces deux banques en termes de gouvernance, de services offerts, de valeurs et d’impact économique. Elle permet de comparer la portée et l’efficacité de leurs stratégies, tout en identifiant les forces et opportunités spécifiques à chaque modèle bancaire. Ce projet fournit ainsi des insights précieux pour comprendre la dynamique du secteur bancaire tunisien et la manière dont différentes approches peuvent coexister et compléter le marché.
+</p>
+
+<a href="https://app.powerbi.com/view?r=eyJrIjoiNzU0YTRlZDMtYTlhMS00ZjEzLWI0MmMtMjZhMDJkZDYyYzg5IiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9">View Project</a>
+
+<h2>Points clés du projet :</h2>
+
+<input type="text" id="searchInput" placeholder="Rechercher un mot">
+
+<div style="margin: 10px 0;">
+    <input type="text" id="addInput" placeholder="Ajouter un nouveau point">
+    <button id="addBtn">Ajouter</button>
+</div>
+
+<ul id="pointsList" style="list-style: none; padding: 0;">
+  <li>Différences de modèles bancaires entre BNA et Zitouna Bank</li>
+  <li>Impact sur le financement agricole et les services clients</li>
+  <li>Approche traditionnelle vs finance islamique</li>
+  <li>Forces et opportunités spécifiques de chaque banque</li>
+</ul>
+
+<h3>Comparaison des taux</h3>
+
+<p>BNA</p>
+<div style="width:300px;background:#d27d7d;height:20px;border-radius:10px;">
+    <div id="bnaBar" style="height:20px;background:#2ecc71;width:0%;border-radius:10px;"></div>
+</div>
+
+<p>Zitouna Bank</p>
+<div style="width:300px;background:#9673e3;height:20px;border-radius:10px;">
+    <div id="zitounaBar" style="height:20px;background:#3498db;width:0%;border-radius:10px;"></div>
+</div>
+
+<div style="margin: 10px 0;">
+    <label>BNA rates (séparés par virgule) :</label>
+    <input type="text" id="bnaInput" placeholder="Ex: 70,75,80">
+    <br>
+    <label>Zitouna rates (séparés par virgule) :</label>
+    <input type="text" id="zitounaInput" placeholder="Ex: 65,70,72">
+    <br>
+    <button id="calcBtn">Calculer</button>
+</div>
+
+<h3 id="winnerMessage"></h3>
+<div id="searchMessage" style="margin-top:10px; color:rgb(240, 78, 86);"></div>
+
+<a href="powerbi.html">Retour à la liste des projets</a>
+
+<script src="banque.js"></script>
+</body>
+</html>
