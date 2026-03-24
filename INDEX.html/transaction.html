@@ -1,41 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>Étude de la Traçabilité des Transactions Bancaires et Factures</title>
-<link rel="stylesheet" href="transaction.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets Power BI</title>
+    <link rel="stylesheet" href="transaction.css">
 </head>
+
 <body>
 
-<h1>Analyse du Numéro de Compte Bancaire et du Numéro de Facture</h1>
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Mes Projets Power BI</h1>
+        <button onclick="logout()" class="logout-btn">Sign Out</button>
+    </header>
 
-<p>
-Dans ce projet, nous analysons deux éléments essentiels à la gestion des transactions financières et commerciales : le <strong>numéro de compte bancaire global</strong> et le <strong>numéro de facture</strong>.
-</p>
+    <!-- SEARCH -->
+    <section class="search-section">
+        <input type="text" id="searchInput" placeholder="🔍 Rechercher un projet...">
+    </section>
 
-<div class="dashboard-container">
-    <iframe 
-        src="https://app.powerbi.com/view?r=eyJrIjoiNDQ0MDRiMjMtZjYwOC00ZWIzLWE3YTEtODI1NDRhYjJlMDY1IiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9" 
-        frameborder="0" 
-        allowFullScreen="true">
-    </iframe>
-</div>
+    <!-- PROJECTS -->
+    <section>
+        <div id="projectsContainer" class="projects-container"></div>
+    </section>
 
-<h2>Points clés du projet :</h2>
+    <!-- ADD PROJECT -->
+    <section class="add-project">
+        <h2>Ajouter un projet</h2>
 
-<!-- Liste des points -->
-<ul id="pointsList"></ul>
+        <input type="text" id="projectTitle" placeholder="Titre du projet">
+        <input type="text" id="projectLink" placeholder="Lien Power BI">
+        <input type="text" id="projectPrice" placeholder="Prix (ex: 80€)">
+        <input type="text" id="projectImg" placeholder="URL image">
 
-<!-- Ajouter un nouveau point -->
-<input type="text" id="newPoint" placeholder="Ajouter un point...">
-<button id="addPoint">Ajouter</button>
+        <div class="buttons">
+            <button id="addProjectBtn">Ajouter</button>
+            
+       
+       
+        </div>
+    </section>
 
-<!-- Rechercher / filtrer -->
-<input type="text" id="searchInput" placeholder="Rechercher un mot...">
+   <!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <h3>Solutions Power BI</h3>
+        <p>Analyse • Reporting • Prédiction pour entreprises</p>
 
-<div id="searchtransaction" style="margin-top:10px; color:rgb(255, 0, 25);"></div>
+        <div class="footer-contact">
+            <p>📧 Email : 
+                <a href="mailto:lobnamaalej89@gmail.com">
+                    lobnamaalej89@gmail.com
+                </a>
+            </p>
 
-<a href="powerbi.html">Retour à la liste des projets</a>
+            <p>📱 Téléphone : 
+                <a href="https://wa.me/21658229886" target="_blank">
+                    +216 58229886
+                </a>
+            </p>
+        </div>
 
-<script src="transaction.js"></script>
+        <div class="footer-buttons">
+            <a href="mailto:lobnamaalej89@gmail.com?subject=Contact&body=Bonjour Lobna," class="btn-footer">
+                Contacter
+            </a>
+
+            <a href="https://wa.me/21658229886?text=Bonjour%20je%20veux%20acheter%20un%20projet" target="_blank" class="btn-footer">
+                WhatsApp
+            </a>
+
+            <!-- Nouveau bouton Acheter Maintenant -->
+            <a href="https://wa.me/21658229886?text=Bonjour%20je%20veux%20acheter%20un%20projet" target="_blank" class="btn-footer btn-buy">
+                Acheter Maintenant
+            </a>
+        </div>
+
+        <p class="footer-copy">© 2026 Lobna BI Services - Tous droits réservés</p>
+    </div>
+</footer>
+
+    <!-- SCRIPT -->
+    <script src="transaction.js"></script>
+
 </body>
 </html>
